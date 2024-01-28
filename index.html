@@ -1,39 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <div class="book-container"></div>
-        <button class="newbook">New Book</button>
-        <form action="#" class="book-form">
-            <div>
-                <label for="title">Title:</label>
-                <input type="text" id="title" name="title" required>
-            </div>
-            <div>
-                <label for="author">Author:</label>
-                <input type="text" id="author" name="author" required>
-            </div>
-            <div>
-                <label for="pages">Number of Pages:</label>
-                <input type="text" id="pages" name="pages" required>
-            </div>
-            <div>
-                <label for="isRead">Read?:</label>
-                <input type="text" id="isRead" name="isRead" required>
-            </div>
-            <div><button class="submit">Submit</button></div>
-        </form>
+      <div class="book-container"></div>
+      <button class="newbook">New Book</button>
+      <form action="#" class="book-form">
+        <div>
+          <label for="title">Title:</label>
+          <input type="text" id="title" name="title" required />
+          <span class="error"></span>
+        </div>
+        <div>
+          <label for="author">Author:</label>
+          <input type="text" id="author" name="author" required />
+          <span class="error"></span>
+        </div>
+        <div>
+          <label for="pages">Pages:</label>
+          <input type="number" id="pages" name="pages" />
+        </div>
+        <div>
+          <label for="isRead">Read?:</label>
+          <input type="radio" id="r1" name="isRead" value="Yes" /><label
+            for="r1"
+            >Yes</label
+          >
+          <input type="radio" id="r2" name="isRead" value="No" /><label for="r2"
+            >No</label
+          >
+        </div>
+        <div><button class="submit">Submit</button></div>
+      </form>
     </div>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
